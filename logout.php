@@ -1,3 +1,5 @@
 <?php
-$ssoLogoutUrl = 'http://sso.local.dingstudio.cn/index.php?action=logout';
+include('config.php');
+$ssoLogoutUrl=ssoUrl.'?action=logout';
+
 header('Location: '.$ssoLogoutUrl);
